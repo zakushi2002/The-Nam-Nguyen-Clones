@@ -9,6 +9,35 @@ html{
     scroll-behavior: smooth;
     font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
 }
+
+/* 
+PC: >= 1024px
+Tablet: >= 740px & < 1024px
+Mobile: < 740
+*/
+
+/* PC */
+@media (min-width: 1024px) {
+    .pc{
+
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 740px) {
+    .tablet{
+        
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .mobile{
+        
+    }
+}
+
+
 /* 
 Từ ngoài vào trong
 Từ trên xuống dưới
@@ -189,13 +218,16 @@ Tổng quan đến chi tiết
 /* Slider */
 #slider{
     /* min-height: 500px; */
-    margin-top: var(--heightheder);
-    background-color: rgb(140,185,155);
+    margin-top: var(--heightheder);    
+}
+
+.image-slider{
     /* Tỉ lệ theo chiều ngang của chính nó */
     padding-top: 50%;
-    background: url('/assets/img/Slider/Slider1.png') top center / cover no-repeat;
     position: relative;
+    background: url('/assets/img/Slider/Slider1.png') top center / cover no-repeat;
 }
+
 #slider .textslider{
     position:absolute;
     bottom: var(--heightheder);
@@ -218,10 +250,13 @@ Tổng quan đến chi tiết
 }
 
 #content .content-general{
+    max-width: 100%;
     width: 818px;
     padding: 68px 0 118px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .header-general-content{
@@ -373,7 +408,7 @@ Tổng quan đến chi tiết
     opacity: 0.6;
 }
 
-.purpose-content{
+.purpose-list .purpose-content{
     background-color: rgb(240,240,225);
     padding: 14px;
     font-size: 16px;
