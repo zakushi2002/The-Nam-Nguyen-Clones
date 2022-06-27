@@ -16,6 +16,18 @@ Mobile: < 740
 
 /* Mobile */
 @media (max-width: 740px) {
+    .mobile-full-width{
+        width: 100% !important;
+    }
+
+    .mobile-column-full{
+        width: 100% !important;
+    }
+    
+    .mobile-margin-top-8px{
+        margin-top: 8px !important ;
+    }
+    
     #header{
         overflow: hidden;
     }
@@ -47,6 +59,7 @@ Mobile: < 740
 
     #content .member-mobile{
         width: 100%;
+        margin-top: 32px;
     }
     #content .content-general .list-member .neon-border div{
         width: 60%;
@@ -78,4 +91,7 @@ Mobile: < 740
         animation: animate 5s linear infinite;
     }
     
+    .form-contact{
+        margin-top: 20px;
+    }
 }
