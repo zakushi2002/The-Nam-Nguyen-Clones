@@ -59,8 +59,9 @@ Tổng quan đến chi tiết
     margin-top: 17px !important;
 }
 
-#main{
-}
+/* #main{
+} */
+
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -223,10 +224,12 @@ Tổng quan đến chi tiết
     text-align: center;
     color: rgb(240,240,225);
 }
+
 #slider .titleimage{
     font-weight: 500;
     font-size: 24px;
 }
+
 #slider .description{
     margin-top: 10px;
 }
@@ -369,6 +372,7 @@ Tổng quan đến chi tiết
     padding: 4px 5px;
     border-radius: 10px;
 }
+
 .time-line-list .expected-date-start{
     background-color: rgb(85, 140, 205);
     color: rgb(240,240,225);
@@ -430,6 +434,7 @@ Tổng quan đến chi tiết
 .information-contact{
     font-size: 17px;
 }
+
 .information-contact i[class*="ti-"]{
     display: inline-block;
     width: 30px;
@@ -438,6 +443,7 @@ Tổng quan đến chi tiết
 .form-contact{
     font-size: 18px;
 }
+
 .form-contact .form-control{
     padding: 10px;
     border: 1px solid rgb(183, 187, 167);
