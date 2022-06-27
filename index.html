@@ -35,11 +35,15 @@
             </ul>
             <!-- End Navigation -->
 
-            <!-- Begin Search -->
+            <!-- Menu Mobile -->
+            <div id="menu-mobile" class="menu-mobile-button pull-right">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <!-- Search Button -->
             <div class="searchbutton pull-right">
                 <i class="search-icon ti-search"></i>
             </div>
-            <!-- End Search -->
 
         </div>
         <!-- End Header -->
@@ -71,7 +75,7 @@
 
                 <div class="row list-member">
 
-                    <div class="column column-fourth text-center">
+                    <div class="member-mobile column column-fourth text-center">
                         
                         <p class="row member-name">Nam</p>
                         <div class="row neon-border">
@@ -80,7 +84,7 @@
 
                     </div>
 
-                    <div class="column column-fourth text-center">
+                    <div class="member-mobile column column-fourth text-center">
                         
                         <p class="row member-name">Anh</p>
                         <div class="row neon-border">
@@ -89,7 +93,7 @@
 
                     </div>
 
-                    <div class="column column-fourth text-center">
+                    <div class="member-mobile column column-fourth text-center">
                         
                         <p class="row member-name">Nhan</p>
                         <div class="row neon-border">
@@ -98,7 +102,7 @@
 
                     </div>
 
-                    <div class="column column-fourth text-center">
+                    <div class="member-mobile column column-fourth text-center">
                         
                         <p class="row member-name">Toan</p>
                         <div class="row neon-border">
@@ -238,6 +242,44 @@
             </div>
         </div>
         <!-- End Footer -->
+
+        <script>
+
+            var header = document.getElementById('header');
+            var mobileMenu = document.getElementById('menu-mobile');
+            var headerHeight = header.clientHeight;
+            // Mở/Đóng Menu Mobile
+            mobileMenu.onclick = function() {
+                var isClosed = header.clientHeight===headerHeight;
+            
+                if (isClosed)
+                {
+                    header.style.height ='auto';
+                }
+                else
+                {
+                    header.style.height = null;
+                }
+            }
+
+            //Tự động đóng khi chọn Menu
+            var menuSelectedAll = document.querySelectorAll('#navigation li a[href*="#"]');
+            for (var i =0; i<menuSelectedAll.length; i++){
+                var menuSelectedOne = menuSelectedAll[i]
+                
+                menuSelectedOne.onclick = function (event){
+                    //Điều kiện có thể đóng
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnavigation');
+                    
+                    if (isParentMenu){
+                        event.preventDefault();
+                    }
+                    else{
+                        header.style.height = null;
+                    }
+                }
+            }
+        </script>
 
         <!-- Begin Modal -->
         <div class="modal js-modal">

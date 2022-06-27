@@ -16,7 +16,66 @@ Mobile: < 740
 
 /* Mobile */
 @media (max-width: 740px) {
-    /* #navigation > li {
+    #header{
+        overflow: hidden;
+    }
+
+    #header .searchbutton{
+        display: none;
+    }
+
+    #navigation,#header .menu-mobile-button,
+    #navigation > li {
         display: block;
-    } */
+    }
+
+    #navigation > li:first-child{
+        display: inline-block;
+    }
+
+    #navigation .subnavigation{
+        position: initial;
+    }
+
+    #navigation li a{
+        padding: 2px 26px;
+    }
+
+    #navigation .subnavigation a{
+        padding: 5px 35px;
+    }
+
+    #content .member-mobile{
+        width: 100%;
+    }
+    #content .content-general .list-member .neon-border div{
+        width: 60%;
+    }
+
+    #content .content-general .list-member .neon-border div{
+        height: 100%;
+        width: 60%;
+        border-radius: 20px;
+        position: relative;
+        background-color: #29303f;
+        padding: 2px;
+        display: grid;
+        overflow: hidden;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #content .content-general .list-member .neon-border div::before{
+        content: '';
+        position: absolute;
+        width: 112px;
+        height: 333px;
+        left: 64.75px;
+        top: -55px;
+        background: linear-gradient(#00ff08,#b400fb);
+        /* transform: rotate(-90deg); */
+        animation: animate 5s linear infinite;
+    }
+    
 }

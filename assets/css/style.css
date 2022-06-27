@@ -56,7 +56,6 @@ Tổng quan đến chi tiết
 }
 
 #main{
-
 }
 .row{
     margin-left: -8px;
@@ -100,7 +99,6 @@ Tổng quan đến chi tiết
 
 /* Header */
 #header{
-    
     height: var(--heightheder);
     background-color: rgb(140,185,155);
     position: fixed;
@@ -111,7 +109,7 @@ Tổng quan đến chi tiết
 }
 
 #navigation{
-    
+    display: inline-block;
 }
 
 #navigation > li{
@@ -169,6 +167,14 @@ Tổng quan đến chi tiết
     font-size: 13px;
 }
 
+#header .menu-mobile-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .menu-mobile-button,
 #header .searchbutton{
     padding: 0 22px;
     cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1152.gif),pointer;
@@ -178,7 +184,15 @@ Tổng quan đến chi tiết
     background-color: rgb(231, 103, 57);
 }
 
-#header .search-icon{
+#header .menu-mobile-button:hover{
+    background-color: rgb(240,240,225);
+}
+
+#header .menu-mobile-button:hover .menu-icon{
+    color: rgb(140,185,155);
+}
+
+#header .menu-icon, #header .search-icon{
     font-size: 20px;
     color: rgb(240,240,225);
     line-height: var(--heightheder);
@@ -221,8 +235,9 @@ Tổng quan đến chi tiết
 
 #content .content-general{
     /* min-width: 50%; */
-    /* width: 818px; */
-    width: 50%;
+    width: 818px;
+    /* width: 50%; */
+    max-width: 100%;
     padding: 68px 0 118px;
     margin-left: auto;
     margin-right: auto;
@@ -263,13 +278,13 @@ Tổng quan đến chi tiết
 
 #content .content-general .list-member .neon-border .member-avatar{
     /* width: 154px;
-    height: 174px;   */
+    height: 174px;  */
     width: 100%;
     height: 100%;   
     border-radius: 20px;
-    /* vertical-align: middle; */
     z-index: 1;
 }
+
 
 #content .content-general .list-member .neon-border{
     margin-top: 14px;
