@@ -214,7 +214,7 @@ Tổng quan đến chi tiết
     /* Tỉ lệ theo chiều ngang của chính nó */
     padding-top: 50%;
     position: relative;
-    background: url('/assets/img/Slider/Slider1.png') top center / cover no-repeat;
+    background: url('../img/Slider/Slider1.png') top center / cover no-repeat;
 }
 
 #slider .textslider{
@@ -232,6 +232,7 @@ Tổng quan đến chi tiết
 
 #slider .description{
     margin-top: 10px;
+    text-shadow: 0 0 1px #000;
 }
 
 /* Content */
