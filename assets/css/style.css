@@ -452,13 +452,14 @@ Tổng quan đến chi tiết
 }
 
 .content-general .info-personal{
-    color: rgb(140,185,155);
+    color: rgb(85, 140, 205);
+    opacity: 0.6;
     text-decoration: none;
     cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1152.gif),pointer;
 }
 
 .content-general .info-personal:hover{
-    color: rgb(105,160,215);
+    opacity: 1;
 }
 
 .group-photo img{
