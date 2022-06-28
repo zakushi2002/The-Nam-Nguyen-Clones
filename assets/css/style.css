@@ -495,11 +495,14 @@ Tổng quan đến chi tiết
 
 #footer .copyright a{
     text-decoration: none;
+    opacity: 0.7;
+    color: rgba(0, 0, 0,0.6);
     cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1152.gif),pointer;
 }
 
 #footer .copyright a:hover{
-    color: rgba(140,185,155,0.4);
+    opacity: 1;
+    color: rgba(0, 0, 0,1);
 }
 
 /* Modal */
